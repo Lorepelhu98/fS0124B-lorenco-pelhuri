@@ -1,0 +1,57 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sfondo{
+    background-color: #222F3F;
+    padding: 10px;
+}
+
+.link{
+    background-color: #364759;
+    padding: 5px;
+    color: #ffffff;
+    word-spacing: 5px;
+    
+}
+
+#orange{
+    background-color: #F56600;
+    background-size: 20px;
+    text-align: center;
+    height: 20px;
+    margin: 40px;
+    align-items: center;
+    display: auto;
+    color: #ffffff;
+}
+
+.background{
+    background-image: url(../images/bg-image.png);
+    background-image: url(../images/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    margin: 40px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+#container{
+    background-image: url(../images/img_1.jpg), url(../images/img_2.jpg),
+    url(../images/img_3.jpg),
+    url(../images/img_4.jpg);
+    background-repeat: no-repeat, repeat, repeat;
+    background-position: left top, center center, right bottom;
+    
+}
+
+
+
+
+
+
+
+
+
+
