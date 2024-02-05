@@ -43,8 +43,11 @@
     url(../images/img_4.jpg);
     background-repeat: no-repeat, repeat, repeat;
     background-position: left top, center center, right bottom;
-    
+    background-position: center;
+    background-size: cover;
 }
+
+
 
 
 
