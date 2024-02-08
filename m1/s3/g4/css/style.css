@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: color(from color srgb r g b);
+}
+
+.bordo{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.tabellone1{
+    text-align: center;
+    border: black;
+    padding: auto;
+}
+
+.tabella{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.bottone{
+    width: 10%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #d78282;
+    border: none;
+}
+
+.numero{
+    width: 10%;
+    margin-top: 20px;
+    padding: 5px;
+}
