@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+</head>
+<body>
+    <script>    
+    let canvas = document.getElementById('myCanvas');
+    let ctx = canvas.getContext('2d');
+    
+    
+    let img = new Image();
+img.src = 'https://th.bing.com/th/id/OIP.RtKGd9zBVvMmnAzcQw7GLAHaEK?rs=1&pid=ImgDetMain';
+img.onload = function() {
+    
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+    
+    let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let data = imageData.data;
+
+    
+    for (var i = 0; i < data.length; i += 4) {
+        let red = data[i];
+        let green = data[i + 1];
+        let blue = data[i + 2];
+        let alpha = data[i + 3];
+        
+        
+        
+    }
+};
+</script>
+    <script src="D10.js"></script>
+</body>
+</html>
