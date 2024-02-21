@@ -1,0 +1,35 @@
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo{
+    background-color: #f5f5dc;
+    padding: 1em;
+    width: 50%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+.scritte{
+    color: black;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color:  #f5f589;
+    border-radius: 1em;
+}
+
+.elite{
+    color: #daa520;
+    background-color: #f5f589;
+}
+
+.logo{
+    height: 2em;
+}
