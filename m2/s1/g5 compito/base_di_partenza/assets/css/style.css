@@ -1,62 +1,99 @@
-body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+body { 
     font-family: "Roboto", sans-serif;
 }
 
-.scritta{
-    font-family: "Spectral", serif;
-    font-size: 6em;
-    margin-bottom: 25px;
-}
-
-#color{
+/*header*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #ffc017;
+    height: 4.6rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1.5%;
+    font-size: 10px;
 }
 
-hr{
-border: none;
-border-top: 1px solid black;
+a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-.navigazion {
+.button{
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
+    padding: 7px 7px;
+    font-size: small;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30em;
+    height: auto;
+}
+
+/*scritta e M*/
+.container {
+    background-color: #ffc017;
+    height: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2em;
+}
+
+.scritta {
+    font-size: 3em;
+}
+
+.button-m {
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 40px;
+    font-size: small;
+}
+
+
+
+.articolo {
     display: flex;
     justify-content: space-between;
-    padding: 10px 50px;
-    margin-left: 100px;
+    align-items: center;
 }
 
-.navigazion a {
-    text-align: center;
-    text-decoration: none;
-    color: #191919;
-    font-size: small;
-    margin-right: 10px;
+.articolo {
+    flex-basis: calc(33.333% - 20px);
+    margin: 10px;
 }
 
-.container {
-    margin-left: 80px;
-    padding: 0 80px;
-    height: 350px;
-    margin-top: 60px;
+.news{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
-h1{
-    margin-bottom: 20px;
+
+.navbar{
+    position: sticky;
+    top: 0;
 }
 
-button{
-    background-color: #191919; 
-    color: white; 
-    border: 2px solid #191919;
-    border-radius: 50px;
-    transition: background-color 0.5s ease;
-    margin-top: 25px;
-    
-}
 
-button:hover {
-    background-color: #000000;
-}
+
+
+
+
+
