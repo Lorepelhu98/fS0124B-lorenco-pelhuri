@@ -1,0 +1,42 @@
+@import 'reset';
+@import 'colori';
+@import 'font';
+@import 'bottoni';
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $colorBgHero;
+    font-size: 15px;
+    height: 4.6rem;
+}
+
+a{
+    color: $colorText;
+    text-decoration: none;
+}
+
+.scritte{
+    background: $colorBgHero;
+}
+
+h1{
+    color: black;
+}
+
+p{
+    color: $colorText;
+}
+
+.bottoni1{
+    background-color: $colorBottons1;
+}
+
+.bottoni2{
+    background-color: $colorBottons2;
+}
+.bottoni3{
+    background-color: $colorBottons3;
+}
