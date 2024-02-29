@@ -1,0 +1,16 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'img';
+@import 'mixin';
+@import 'sfondo';
+
+
+
+.visually-hidden{
+    @include iconImg;
+}
+
+.hero{
+    @include heros;
+    @include bg;
+}
+
