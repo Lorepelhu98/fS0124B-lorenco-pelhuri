@@ -1,0 +1,38 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'background';
+@import 'img';
+
+body{
+    @include bg;
+    color: white;
+}
+
+.navbar-brand{
+    @include img;
+}
+
+.d-flex1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar{
+    width: 30px;
+    height: auto;
+}
+
+.dropdown-toggle{
+    @include bg;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+

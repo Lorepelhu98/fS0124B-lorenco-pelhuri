@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg mx-4">
+            <div class="container-fluid text-white">
+                <img class="navbar-brand" src="./Netflix-assets/assets/netflix_logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Tv Shows</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">My List</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn" type="submit"><i class="bi bi-search icone"></i></button>
+                        <img src="./Netflix-assets/assets/kids_icon.png" class="avatar">
+                        <button class="btn" type="submit"><i class="bi bi-bell-fill icone"></i></button>
+                    </form>
+                </div>
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-light text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./Netflix-assets/assets/avatar.png" class="avatar">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">New project</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="navbar mx-4">
+        <div class="container-fluid">
+            <h2 class="navbar-brand text-light">Tv Shows</h2>
+            <div class="btn-group" role="group">
+                <button type="button" class="dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
+                geners
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                </ul>
+              </div>
+            <form class="d-flex" role="search">
+                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-code-square"></i></button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-card-list"></i></button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid mt-4">
+        <h3 class="d-flex mt-3 m-4">Trending Now</h3>
+        <div id="film-carousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-body">
+                        <img src="./Netflix-assets/assets/media/media0.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media1.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media2.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media3.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media4.jpg" class="card-img-top" alt="Movie 1">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#film-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#film-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <h3 class="d-flex mt-2 m-4">Watch It Again</h3>
+        <div id="film-carousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-body">
+                        <img src="./Netflix-assets/assets/media/media5.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media6.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media7.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media8.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media9.jpg" class="card-img-top" alt="Movie 1">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#film-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#film-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <h3 class="d-flex mt-2 m-4">New Releases</h3>
+        <div id="film-carousel" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card-body img-fuild">
+                        <img src="./Netflix-assets/assets/media/media10.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media11.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media12.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media16.webp" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media1.jpg" class="card-img-top" alt="Movie 1">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#film-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#film-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <footer class="bd-footer py-4 py-md-5 mt-5">
+        <div class="container py-4 py-md-5 px-4 px-md-3">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class=" mb-2 text-decoration-none" href="/">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="">Home</a></li>
+                        <li class="mb-2"><a href="">Docs</a></li>
+                        <li class="mb-2"><a href="">Examples</a></li>
+                        <li class="mb-2"><a href="">Icons</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Guides</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="">Gettingstarted</a></li>
+                        <li class="mb-2"><a href="">Startertemplate</a></li>
+                        <li class="mb-2"><a href="">Webpack</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Projects</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="">Bootcamp</a></li>
+                        <li class="mb-2"><a href="">figure</a></li>
+                        <li class="mb-2"><a href="">Icons</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Community</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="">Issues</a></li>
+                        <li class="mb-2"><a href="">Discussions</a></li>
+                        <li class="mb-2"><a href="">Corporate sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
