@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg mx-4">
-            <div class="container-fluid text-white">
+            <div class="container-fluid">
                 <img class="navbar-brand" src="./Netflix-assets/assets/netflix_logo.png" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -22,78 +22,93 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Tv Shows</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Tv Shows</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Movies</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Recently Added</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">My List</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My List</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <button class="btn" type="submit"><i class="bi bi-search icone"></i></button>
-                        <img src="./Netflix-assets/assets/kids_icon.png" class="avatar">
-                        <button class="btn" type="submit"><i class="bi bi-bell-fill icone"></i></button>
-                    </form>
                 </div>
-                <div class="dropdown text-end">
-                    <a href="#" class="d-block link-light text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./Netflix-assets/assets/avatar.png" class="avatar">
-                    </a>
-                    <ul class="dropdown-menu text-small">
-                        <li><a class="dropdown-item" href="#">New project</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
+                <div class="d-flex mt-2 me-auto mb-2 mb-lg-0">
+                    <button class="btn" type="submit"><i class="bi bi-search icone text-light"></i></button>
+                    <img src="./Netflix-assets/assets/kids_icon.png" class="avatar">
+                    <button class="btn" type="submit"><i class="bi bi-bell-fill icone text-light"></i></button>
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-light text-decoration-none dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./Netflix-assets/assets/avatar.png" class="avatar">
+                        </a>
+                        <ul class="dropdown-menu text-small">
+                            <li><a class="dropdown-item" href="#">New project</a></li>
+                            <li><a class="dropdown-item" href="settings.html">Settings</a></li>  <!--ciao michele, con questo link vai nella pagina settings-->
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li> <!--ciao michele, con questo link vai nella pagina profile-->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             </div>
         </nav>
     </header>
-    <main class="navbar mx-4">
+    <div class="navbar">
         <div class="container-fluid">
-            <h2 class="navbar-brand text-light">Tv Shows</h2>
-            <div class="btn-group" role="group">
-                <button type="button" class="dropdown-toggle text-light" data-bs-toggle="dropdown" aria-expanded="false">
-                geners
-                </button>
+            <h2 class=" text-light mx-4">Tv Shows</h2>
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="btn-group">
+                    <button type="button" class="dropdown-toggle text-light" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        geners
+                    </button>
+                </div>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown link</a></li>
                 </ul>
-              </div>
-            <form class="d-flex" role="search">
-                <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-code-square"></i></button>
-                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-card-list"></i></button>
+            </div>
+            <div class="d-flex mt-2 mx-3">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-justify"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="bi bi-border-all"></i></button>
+                        </div>
                     </div>
-            </form>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid mt-4">
         <h3 class="d-flex mt-3 m-4">Trending Now</h3>
         <div id="film-carousel" class="carousel slide" data-ride="carousel">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="container-fluid row gx-0">
+                <div>
                     <div class="card-body">
-                        <img src="./Netflix-assets/assets/media/media0.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media1.jpg" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media2.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media3.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media4.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media0.webp"
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media1.jpg"
+                            class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media19.webp"
+                            class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media2.webp" class="col-lg-3 col-xl-2 d-none d-lg-block"
+                            alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media3.webp" class="col-lg-2 col-xl-2 d-none d-xl-block"
+                            alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media4.jpg" class="col-xl-2 d-none d-xl-block"
+                            alt="Movie 1">
                     </div>
                 </div>
             </div>
@@ -105,17 +120,24 @@
             </a>
         </div>
     </div>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-5">
         <h3 class="d-flex mt-2 m-4">Watch It Again</h3>
         <div id="film-carousel" class="carousel slide" data-ride="carousel">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="container-fluid row gx-0">
+                <div>
                     <div class="card-body">
-                        <img src="./Netflix-assets/assets/media/media5.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media6.jpg" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media7.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media8.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media9.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media5.webp"
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" width="190rem" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media6.jpg"
+                            class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" width="190rem" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media18.jpg"
+                            class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block" width="190rem" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media7.webp" class="col-lg-3 col-xl-2 d-none d-lg-block"
+                            width="190rem" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media8.webp" class="col-lg-2 col-xl-2 d-none d-xl-block"
+                            width="190rem" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media9.jpg" class="col-xl-2 d-none d-xl-block"
+                            width="190rem" alt="Movie 1">
                     </div>
                 </div>
             </div>
@@ -127,17 +149,24 @@
             </a>
         </div>
     </div>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-4">
         <h3 class="d-flex mt-2 m-4">New Releases</h3>
         <div id="film-carousel" class="carousel slide" data-ride="carousel">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="container-fluid row gx-0">
+                <div>
                     <div class="card-body img-fuild">
-                        <img src="./Netflix-assets/assets/media/media10.jpg" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media11.jpg" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media12.jpg" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media16.webp" class="card-img-top" alt="Movie 1">
-                        <img src="./Netflix-assets/assets/media/media1.jpg" class="card-img-top" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media10.jpg"
+                            class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media11.jpg"
+                            class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block" alt="Movie 1">
+                            <img src="./Netflix-assets/assets/media/media26.webp"
+                            class="col-md-4 col-lg-3 col-xl-2 d-none d-md-block" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media12.jpg" class="col-lg-3 col-xl-2 d-none d-lg-block"
+                            alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media16.webp"
+                            class="col-lg-2 col-xl-2 d-none d-xl-block" alt="Movie 1">
+                        <img src="./Netflix-assets/assets/media/media1.jpg" class="col-xl-2 d-none d-xl-block"
+                            alt="Movie 1">
                     </div>
                 </div>
             </div>
@@ -149,65 +178,58 @@
             </a>
         </div>
     </div>
-    <footer class="container d-flex ">
-        <div class="footer">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-youtube"></i>
-        </div>
-            <div class="row">
-                    <div class="col-mb-3">
-                        <a href="#">Audio and Subtitles</a>
-                    </div>
-                    <div class="col-mb-3">
-                        <a href="#">Audio and Description</a>
-                    </div>
-                    <div class="col-mb-3">
-                        <a href="#">Help Center</a>
-                    </div>
-                    <div class="col-mb-3">
-                        <a href="#">Gift Cards</a>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col-mb-3">
-                    <a href="#">Media Center</a>
-                </div>
-                <div class="col-mb-3">
-                    <a href="#">Investor Relations</a>
-                </div>
-                <div class="col-mb-3">
-                    <a href="#">Jobs</a>
-                </div>
-                <div class="col-mb-3">
-                    <a href="#">Terms of Use</a>
-                </div>
+    <footer class="container d-flex pt-5">
+        <div class="footer nav flex-column mx-3">
+            <i class="bi bi-facebook mx-3"></i>
+            <i class="bi bi-instagram mx-3"></i>
+            <i class="bi bi-twitter mx-3"></i>
+            <i class="bi bi-youtube mx-3"></i>
         </div>
         <div class="row">
-            <div class="col-mb-3">
-                <a href="#">Privacy</a>
+            <div class="col mb-3">
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Audio and Subtitles</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Media Center</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Privacy</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Contact Us</a>
+                </li>
             </div>
-            <div class="col-mb-3">
-                <a href="#">Legal Notices</a>
+            <div class="col mb-3">
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Help Center</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Jobs</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Cookie Preferences</a>
+                </li>
             </div>
-            <div class="col-mb-3">
-                <a href="#">Coockie Preferences</a>
+            <div class="col mb-3">
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Gift Cards</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Term of Use</a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Corporate Information</a>
+                </li>
             </div>
-            <div class="col-mb-3">
-                <a href="#">Corporate Information</a>
-            </div>
-    </div>
-    <div class="row">
-        <div class="col-mb-3">
-            <a href="#">Contact Us</a>
         </div>
-    </div>
-    <button class="buttonFooter">Service Code</button>
-    <address>&copy; 1997-2019 Netflix, Inc. {i-0d46fthj906fehde}</address>
+        <button class="btn btn-outline-secondary">Service Code</button>
+        <address class="pt-3">&copy; 1997-2019 Netflix, Inc. {i-0d46fthj906fehde}</address>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+<!--Ciao michele, mi scuso se i miei compito non sono perfetti, ma ci sto provando ogni settimana a migliorare,spero che questo andrà meglio dello scorso che è stato un distastro-->
