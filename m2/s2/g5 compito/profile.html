@@ -15,7 +15,44 @@
     </header>
 <main>
     <div class="container">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Modifica Profilo</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="profileName">Nome Profilo</label>
+                            <input type="text" class="form-control" id="profileName" value="Strive Student">
+                        </div>
+                        <div class="form-group">
+                            <label for="languageSelect">Lingua</label>
+                            <select class="form-control" id="languageSelect">
+                                <option selected>Inglese</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Impostazioni di maturità</label>
+                            <button type="button" class="btn btn-primary">MODIFICA</button>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="autoplayNext">
+                            <label class="form-check-label" for="autoplayNext">Riproduci automaticamente il prossimo episodio in una serie su tutti i dispositivi.</label>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="autoplayPreviews">
+                            <label class="form-check-label" for="autoplayPreviews">Riproduci automaticamente le anteprime durante la navigazione su tutti i dispositivi.</label>
+                        </div>
+                        <button type="submit" class="btn btn-success">SALVA</button>
+                        <button type="button" class="btn btn-light">ANNULLA</button>
+                        <button type="button" class="btn btn-danger">ELIMINA PROFILO</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
