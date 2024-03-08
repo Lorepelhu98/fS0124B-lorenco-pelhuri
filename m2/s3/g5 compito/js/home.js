@@ -15,8 +15,8 @@ const renderProduct = function (everyProduct) {
             <p class="card-text">${product.description}</p>
             <p class="card-text">${product.brand}</p>
             <p class="card-text">${product.price}€</p>
-            <a href="./details.html?productId=${product._id}" class="btn btn-primary m-2">Scopri di più</a>
-            <a href="./backoffice.html?productId=${product._id}" class="btn btn-warning m-2">Modifica</a>
+            <a href="./details.html?eventId=${product._id}" class="btn btn-primary m-2">Scopri di più</a>
+            <a href="./edit.html?eventId=${product._id}" class="btn btn-warning m-2">Modifica</a>
         </div>
     </div>
     `

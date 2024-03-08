@@ -1,31 +1,4 @@
-const address = new URLSearchParams(location.search)
-const productId = address.get('productId')
-
-
-const deleteProduct = function () {
-    fetch('https://striveschool-api.herokuapp.com/api/product/' + productId, {
-        method: 'DELETE',
-        headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI5MDJhZDEzOWM0MzAwMTg4MTQ1YjciLCJpYXQiOjE2OTcxODY0NzcsImV4cCI6MTY5ODM5NjA3N30.hZuujHf_b77dfPmoEMyAHf6D_plyV-bQ77ryZnVZ910"
-        }
-    })
-        .then((res) => {
-            if (res.ok) {
-                if (window.confirm("Vuoi cancellare il prodotto?")) {
-                    location.assign('home.html')
-                }
-
-                console.log('prodotto eliminato')
-            } else {
-                throw new Error('errore')
-            }
-        })
-        .catch((err) => {
-            console.log('errore', err)
-        })
-}
-
-
+const productId = new URLSearchParams(location.search).get('eventId')
 
 const generateProductDetails = function (detail) {
     const row = document.getElementById('product-details')
@@ -48,12 +21,11 @@ const generateProductDetails = function (detail) {
     `
 }
 
-
 const getProductDetails = function () {
     fetch("https://striveschool-api.herokuapp.com/api/product/" + productId, {
         headers: {
             'Content-Type':'application/json',
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI5MDJhZDEzOWM0MzAwMTg4MTQ1YjciLCJpYXQiOjE2OTcxODY0NzcsImV4cCI6MTY5ODM5NjA3N30.hZuujHf_b77dfPmoEMyAHf6D_plyV-bQ77ryZnVZ910"
+            "Authorization": `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI5MDJhZDEzOWM0MzAwMTg4MTQ1YjciLCJpYXQiOjE2OTcxODY0NzcsImV4cCI6MTY5ODM5NjA3N30.hZuujHf_b77dfPmoEMyAHf6D_plyV-bQ77ryZnVZ910`
         }
     })
         .then((res) => {
