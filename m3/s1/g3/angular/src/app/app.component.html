@@ -1,0 +1,11 @@
+<div class="container">
+  <app-components></app-components>
+
+
+  <div class="row mt-5">
+    <div *ngFor="let articolo of articoliArr" class="col-4">
+      <h2>{{articolo.title}}</h2>
+      <p>{{articolo.body}}</p>
+    </div>
+  </div>
+</div>
