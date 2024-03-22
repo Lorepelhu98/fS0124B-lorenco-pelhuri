@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-6">
+          <img src="../../../assets/img/OIP.jpeg" width="30%">
+      </div>
+      <div class="col-6 p-5 bg-body-secondary text-dark rounded">
+          <h1>Le nostre auto {{brand}}</h1>
+      </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12 d-flex justify-content-center mb-3" *ngFor="let auto of autos">
+        <div class="card" [ngClass]="{
+            'bg-success': auto.available,
+            'bg-danger': !auto.available
+        }">
+            <img [src]="auto.modelImage"
+                class="card-img-top"
+                alt="{{auto.brand}} {{auto.model}}">
+            <div class="card-body">
+                <h5 class="card-title h2">{{auto.brand}} {{auto.model}}
+                </h5>
+                <p class="card-text h4">
+                    <span
+                        class="badge bg-dark me-1">Anno:
+                        {{auto.year}}</span>
+                    <span
+                        class="badge bg-dark me-1">Prezzo:
+                        {{auto.price}}</span>
+                    <span *ngIf="auto.available"
+                        class="badge bg-dark me-1">Pronta
+                        consegna: sì</span>
+                    <span *ngIf="!auto.available"
+                        class="badge bg-dark me-1">Pronta
+                        consegna: no</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
