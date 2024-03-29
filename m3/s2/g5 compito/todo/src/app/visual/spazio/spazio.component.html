@@ -1,0 +1,3 @@
+<div class="d-flex flex-column gap-2 mt-5" *ngIf="todos$ | async as todos">
+  <app-todo [todo]="todo" *ngFor="let todo of todos; trackBy: trackByFn"></app-todo>
+</div>

@@ -1,0 +1,10 @@
+<div class="container my-5">
+  <h1 class="mb-4">Hey Boss, what's my task for the day?</h1>
+  <div class="d-flex gap-2 mb-5">
+    <a [routerLink]='["/content"]' class="btn btn-primary">See how much we've accomplished!</a>
+    <a [routerLink]='["/todo"]' class="btn btn-primary">What's left?</a>
+    <a [routerLink]='["/users"]' class="btn btn-primary">By user</a>
+    <a [routerLink]='["/"]' class="btn btn-primary">See all</a>
+  </div>
+  <router-outlet></router-outlet>
+</div>
