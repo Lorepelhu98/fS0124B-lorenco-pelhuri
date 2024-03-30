@@ -1,4 +1,3 @@
-import { User } from "./user.service";
 
 export interface Todo {
   title: string;
