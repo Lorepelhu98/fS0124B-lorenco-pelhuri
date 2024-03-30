@@ -1,6 +1,9 @@
-<div class="single__todo" [ngClass]="{'bg-success-subtle': todo.completed, 'bg-danger-subtle': !todo.completed}">
-  <label for="{{todo.id | identifier:'todo'}}" class="fw-bold">
-    <input (change)="toggleTodoStatus(todo.id)" [checked]="todo.completed" type="checkbox" id="{{todo.id | identifier:'todo'}}">
+<div class="todo" [ngClass]="{'bg-success-subtle': todo.completed, 'bg-danger-subtle': !todo.completed}">
+  <label [attr.for]="todo.id | identifier:'todo'" class="fw-bold">
+    <input type="checkbox"
+      [id]="todo.id | identifier:'todo'"
+      [checked]="todo.completed"
+      (change)="toggleTodoStatus(todo.id)">
     {{todo.todo}}
   </label>
   <small> {{todo.user! | fullName}}</small>

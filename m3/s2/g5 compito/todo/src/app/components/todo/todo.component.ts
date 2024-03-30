@@ -5,18 +5,17 @@ import { TodoService } from '../../services/todo.service';
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
-  styleUrl: './todo.component.scss'
+  styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent {
-toggleTodoStatus(arg0: number) {
-throw new Error('Method not implemented.');
-}
   @Input() todo!: Todo;
+toggleTodoStatus: any;
 
   constructor(private todoService: TodoService) {}
 
-  toggleTodoCompletion(id: number): void {
-    this.todoService.toggleTodoStatus(id);
+  toggleTodoCompletion(): void {
+    if (this.todo) {
+      this.todoService.toggleTodoStatus(this.todo.id);
+    }
   }
-
 }
