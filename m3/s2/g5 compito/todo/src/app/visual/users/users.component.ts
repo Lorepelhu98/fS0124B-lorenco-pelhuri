@@ -17,7 +17,7 @@ export class UsersComponent implements OnInit {
     this.users$ = this.todoSrv.mapByUser();
   }
 
-  trackByFn(index: number, item: User) {
+  trackByFn(_index: number, item: User) {
     return item.id;
   }
 }

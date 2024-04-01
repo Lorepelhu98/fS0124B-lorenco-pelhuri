@@ -5,9 +5,10 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 export class IdentifierPipe implements PipeTransform {
   transform(value: number, prefix: string): string {
-    if (!prefix || !value) {
+    if (prefix && value) {
+      return `${prefix}_${value}`;
+    } else {
       return 'Invalid';
     }
-    return `${prefix}_${value}`;
   }
 }
