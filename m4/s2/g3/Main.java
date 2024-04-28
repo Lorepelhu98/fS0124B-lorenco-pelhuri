@@ -109,7 +109,6 @@ public class Main {
 		customers.add(giacomo);
 		customers.add(marina);
 	}
-
 	public static void placeOrders() {
 		Order aldoOrder = new Order(customers.get(0));
 		Order giovanniOrder = new Order(customers.get(1));
